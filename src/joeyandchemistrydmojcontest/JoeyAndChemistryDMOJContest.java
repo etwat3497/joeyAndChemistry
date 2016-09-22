@@ -37,20 +37,38 @@ public class JoeyAndChemistryDMOJContest {
         if(userInput.contains(carbon)){
             int indexCarbon = userInput.indexOf(carbon);
             int carbonSubscript = Integer.parseInt(userInput.substring(indexCarbon+1, indexCarbon+2));
-            int numOfCarbon = a*carbonSubscript;
-            System.out.println(numOfCarbon);
+            for(int i=0; i<numbers.length;i++){
+                if(Integer.toString(carbonSubscript).contains(numbers[i])){
+                    numOfC = a*carbonSubscript;
+                    System.out.println(numOfC);
+                }
+            }
+
         }
+        
         if(userInput.contains(oxygen)){
             int indexOxygen = userInput.indexOf(oxygen);
             int oxygenSubscript = Integer.parseInt(userInput.substring(indexOxygen+1, indexOxygen+2));
-            int numOfOxygen = a*oxygenSubscript;
-            System.out.println(numOfOxygen);
+            for(int i=0; i<numbers.length;i++){
+                if(Integer.toString(oxygenSubscript).contains(numbers[i])){
+                    numOfO = a*oxygenSubscript;
+                    System.out.println(numOfO);
+                }
+            }
+
+            
+            
         }
         if(userInput.contains(hydrogen)){
             int indexHydrogen = userInput.indexOf(hydrogen);
             int hydrogenSubscript = Integer.parseInt(userInput.substring(indexHydrogen+1, indexHydrogen+2));
-            int numOfHydrogen = a*hydrogenSubscript;
-            System.out.println(numOfHydrogen);
+            for(int i=0; i<numbers.length;i++){
+                if(Integer.toString(hydrogenSubscript).contains(numbers[i])){
+                    numOfH = a*hydrogenSubscript;
+                    System.out.println(numOfH);
+                }
+            }
+
         }
         
     }
